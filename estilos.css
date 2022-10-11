@@ -1,0 +1,537 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ------------- GENERAL ------------------------------------------------ */
+
+*{box-sizing: border-box;
+}
+
+body{
+    position:relative;
+    background: #f5f0ed;
+    color: black;
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 725px;
+    margin: 0px auto;
+    padding: 0px;        
+}
+
+/* ------------- ESTILOS TIPOGRAFICOS ----------------------------------- */
+
+h1{
+    font-size: 34px /*44px*/;
+    font-weight: 800;
+}
+h2{
+   font-size: 24px/*28px*/; 
+    font-weight: 800;
+}
+h3{
+   font-size: 20px/*24px*/; 
+    font-weight: 800;
+}
+p{
+    font-size: 15px/*16px*/;
+}
+.navegacion a{
+    font-size: 12px /*14px*/;
+}
+
+/* ------------- IMAGENES ---------------------------- ------------------ */
+
+
+/* ------------- CABECERA ----------------------------------------------- */
+
+.cabecera{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    min-height: 475px;
+    
+    background-image: url(imagenes/Fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.fondo1{
+    display: block; 
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+}
+.logo{
+    position: absolute;
+    top: 10px;
+    left: 5%;
+}
+.lanzador-menu{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.cabecera .text{
+    color: #f5f0ed;
+    text-align: center;
+    padding: 110px 4% 80px 4%;   
+}
+
+hr{
+   border-bottom: 2px solid #f5f0ed;
+   width: 85px;
+   margin-bottom: 15px;
+}
+
+
+/* ------------- ESTRUCTURA --------------------------------------------- */
+
+/* -------- EL ESPACIO -------------------- */
+
+.espacio{
+    overflow: hidden;
+    width: 100%;
+    min-height: 534px;
+}
+.brunch{
+    display: block;
+    background-color: #d03b40;
+    text-align: center;
+    color: #ded6c0;
+    padding: 35px 4%;
+    min-height: 267px;
+    opacity: 0.8;
+    transition: 0.5 opacity .3;
+}
+.brunch:hover{
+    opacity: 1;
+}
+.fiestas{
+    display: block;
+    background-color: #ded6c0;
+    text-align: center;
+    color: #d03b40;
+    padding: 35px 4%;
+    min-height: 267px;
+    opacity: 0.8;
+    transition: 0.5 opacity .3;
+}
+.fiestas:hover{
+    opacity: 1;
+}
+
+
+/* --------- PRODUCTOS -------------------- */
+
+.productos{
+    
+    overflow: hidden;
+    width: 100%;
+    min-height: 475px;
+    
+    background-image: url(imagenes/Fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+.productos .text{
+    display: block;
+    color: #f5f0ed;
+    text-align: center;
+    padding: 60px 8% 10px 8%; 
+    min-height: 420px;
+    
+    
+}
+.enlace.productos{
+    display: inline;
+    color: #f5f0ed;
+    text-align: center;
+    max-width: 275px;
+    min-height: 40px;
+    padding: 10px 10px;   
+    border: 2px solid #f5f0ed;
+    background: none;
+    margin-top: 20px;
+}
+.enlace.productos:hover{
+    
+    border: 3px solid #f5f0ed;
+    font-weight: 800;
+    
+}
+/* --------- ESPECIALIDADES --------------- */
+
+.especialidades{
+    overflow: hidden;
+    width: 100%;
+    min-height: 1650px;
+}
+.contenedor{
+    display: block;
+    margin-top: 20px;
+    min-height: 380px;
+}
+.text2{
+    text-align: center;
+    padding: 20px 8%;
+}
+.img{
+    display: block; 
+    margin: 0 auto;
+    max-width: 100%;
+    width: 30%;
+    opacity: 0.8;
+    transition: 0.5 opacity .3; 
+}
+.img:hover{
+    opacity: 1;
+}
+/* --------- CONTACTO --------------------- */
+
+.contacto{
+    overflow: hidden;
+    width: 100%;
+    min-height: 534px;
+}
+.mail{
+   display: block;
+    background-color: #ded6c0;
+    text-align: center;
+    color: #d03b40;
+    padding: 35px 4%;
+    min-height: 267px;
+    opacity: 0.8;
+    transition: 0.5 opacity .3;
+}
+.mail:hover{
+    opacity: 1;
+}
+.direccion{
+    display: block;
+    background-color: #d03b40;
+    text-align: center;
+    color: #ded6c0;
+    padding: 35px 4%;
+    min-height: 267px;
+    opacity: 0.8;
+    transition: 0.5 opacity .3;
+}
+.direccion:hover{
+    opacity: 1;
+}
+#mail{
+    color: #d03b40;
+    font-weight: 800;
+}
+/* ------------- NAVEGACION --------------------------------------------- */
+
+
+
+ul{
+    padding: 0px;
+    list-style: none;
+    margin: 0px;
+}
+.navegacion a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    padding-top: 15px;
+    padding-left: 10px;
+    font-weight: 800;   
+}
+
+
+
+/* ------------- PIE ---------------------------------------------------- */
+
+.pie{
+    display: block;
+    min-height: 60px;
+    background-color: #241d1b;
+    color: #f5f0ed;
+    text-align: center;
+    padding-top: 15px;   
+}
+
+/* ------ NAVEGACION JAVASCRIPT ----------------------------------------- */
+
+@media screen and (max-width: 724px){
+    
+    .js .navegacion{
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height .5s;
+        position: absolute;
+        top: 55px;
+        left: 0px;
+        right: 0px;
+        text-align: center;
+        
+    }
+    
+    .js .navegacion a{
+        
+        padding: 11px 10%;
+        color: #f5f0ed;
+        border-top: 4px solid #ded6c0;
+        font-size: 12px;
+        transition: font-size .3;
+    }
+    .js .navegacion a:hover{
+        font-size: 14px;
+    }
+    .js .navegacion.menu-desplegado{
+        max-height: 250px;
+    }
+    .js .navegacion li{
+        
+        background-color: #d03b40;
+        transition: background-color 0.3s;
+    }
+    .js .navegacion li:hover{
+        background-color: #E06A6E; 
+    }  
+}
+
+/* ------------- NAVEGACION RESPONSIVE ---------------------------------- */
+
+
+@media screen and (min-width: 725px){
+    .lanzador-menu{
+        display: none;
+    }
+    .navegacion{
+        position: absolute;
+        top: 15px;
+        right: 15px;   
+    }
+    .navegacion a{
+        color: #f5f0ed;
+        border-bottom: none;
+    }
+    .navegacion li{
+        display: inline-block;
+        margin-right: 5px;   
+    }
+    body{
+        max-width: 2000px;
+    }
+    h1{
+    font-size: 39px /*44px*/;
+    }
+    h2{
+       font-size: 26px/*28px*/; 
+    }
+    h3{
+       font-size: 22px/*24px*/;
+    }
+    p{
+        font-size: 15px/*16px*/;
+    }
+    .navegacion a{
+        font-size: 13px /*14px*/;
+    }
+    .espacio{
+        min-height: 267px;
+    }
+    .brunch{
+        float: left;
+        width: 50%;
+        min-height: 280px;
+        
+    }
+    .fiestas{
+        float: left;
+        width: 50%;
+        min-height: 280px;
+    }
+    
+    .especialidades{
+        min-height: 400px;
+    }
+    
+    .contenedor{
+        overflow: hidden;
+        min-height: 175px;
+        margin-top: 0px;
+        margin-top: 10px;
+    }
+    .img{
+        display: block;   
+        float: left;
+        margin: 20px 5px;    
+        max-width: 100%;
+        width: 15%;
+        
+     }
+    .text2{
+        display: block;
+        float: left;
+        width: 80%;
+        padding: 20px;
+        text-align: left;
+    }
+    
+    .contacto{
+        min-height: 267px;
+    }
+    .mail{
+        float: left;
+        width: 50%;
+        min-height: 280px;
+    }
+    .direccion{
+        float: left;
+        width: 50%;
+        min-height: 280px;
+    }
+
+}
+
+@media screen and (min-width: 1100px){
+    .navegacion li{
+        margin-right: 25px;   
+    }
+    h1{
+    font-size: 44px;
+    }
+    h2{
+       font-size: 28px;  
+    }
+    h3{
+       font-size: 24px;     
+    }
+    p{
+        font-size: 16px;
+    }
+    .navegacion a{
+        font-size: 14px;
+    }
+    .espacio{
+        min-height: 400px;
+    }
+    .brunch{
+        min-height: 400px;
+        padding: 70px 8%;
+    }
+    .fiestas{
+        min-height: 400px;
+        padding: 70px 8%;
+    }
+    
+    .especialidades{
+        min-height: 475px;
+    }
+    
+    .contenedor{
+        float: left;
+        width: 50%;
+        overflow: hidden;
+        min-height: 300px;
+        margin-top: 0px;
+        margin-top: 10px;
+    }
+    .img{
+        display: block;   
+        float: left;
+        margin: 20px 5px;    
+        max-width: 100%;
+        width: 15%;
+        
+     }
+    .text2{
+        display: block;
+        float: left;
+        width: 70%;
+        padding: 20px;
+        text-align: left;
+    }
+    
+    .contacto{
+        min-height: 400px;
+    }
+    .mail{
+        min-height: 400px;
+        padding: 70px 8%;
+    }
+    .direccion{
+        min-height: 400px;
+        padding: 70px 8%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
